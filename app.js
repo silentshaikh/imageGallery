@@ -1,3 +1,10 @@
+let btnToggle = document.querySelector(".menu i");
+let navBar = document.querySelector(".navbar");
+btnToggle.addEventListener("click",() => {
+    navBar.classList.toggle("active");
+    btnToggle.style.transform = "rotate(180deg)";
+    btnToggle.classList.toggle("fa-xmark");
+});
 let myInput = document.getElementById("input");
 let myBtn = document.querySelectorAll(".btn");
 let myImage = document.querySelectorAll(".container img");
@@ -10,6 +17,7 @@ myInput.addEventListener("input",() => {
         }else{
             element.style.display ="none";
         }
+
     })
 });
 let popUp = document.querySelector(".popup");
@@ -22,6 +30,8 @@ myImage.forEach((element) => {
     let getSrc = element.getAttribute("src");
     popUp.style.display="flex";
     popImg.src = getSrc;
+    navBar.classList.remove("active");
+        btnToggle.classList.remove("fa-xmark");
     });
 });
 Array.from(myBtn).forEach((element) => {
@@ -34,6 +44,8 @@ Array.from(myBtn).forEach((element) => {
         }else{
             e.style.display = "none";
         }
+        navBar.classList.remove("active");
+        btnToggle.classList.remove("fa-xmark");
         })
     })
 });
@@ -43,15 +55,4 @@ restBtn.addEventListener("click",() => {
         window.location.reload();
     }, 2000);
 });
-let btnToggle = document.querySelector(".menu i");
-let navBar = document.querySelector(".navbar");
-btnToggle.addEventListener("click",() => {
-    navBar.classList.toggle("active");
-    btnToggle.style.transform = "rotate(180deg)";
-    btnToggle.classList.toggle("fa-xmark");
-});
-window.onscroll = () => {
-    btnToggle.classList.remove("fa-xmark");
-    navBar.classList.remove("active");
-}
 
