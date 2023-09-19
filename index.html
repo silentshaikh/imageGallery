@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img-9.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- <i class="fa-solid fa-xmark"></i> -->
+    <header class="fil-header">
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="navbar">
+            <h1>Image Gallery</h1>
+            <div class="inp">
+                <input type="text" name="" id="input" placeholder="Search Here...">
+            </div>
+            <div class="filt-btn">
+                <h2>Category:</h2>
+                <button class="btn" data-category="animal">animals</button>
+                <button class="btn" data-category="food">food</button>
+                <button class="btn" data-category="fish">fish</button>
+                <button class="btn" data-category="flower">flower</button>
+                <button class="reset" > reset </button>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <img src="./img-1.jpg" data-cat="animal" data-search="animal bird cute chicks" alt="imageGallery">
+                <img src="./img-2.svg" data-cat="food" data-search="vector cookies christmas" alt="imageGallery">
+                <img src="./img-3.png" data-cat="food" data-search="food corn cartoon png" alt="imageGallery">
+                <img src="./img-4.jpg" data-cat="fish" data-search="animal fish dolphin" alt="imageGallery">
+                <img src="./img-5.jpg" data-cat="animal" data-search="animal squirrel cute" alt="imageGallery">
+                <img src="./img-6.png" data-cat="animal" data-search="animal panda png cartoon" alt="imageGallery">
+                <img src="./img-7.svg" data-cat="animal" data-search="animal penguine bird cartoon" alt="imageGallery">
+                <img src="./img-8.jpg" data-cat="animal" data-search="animal bird cute" alt="imageGallery">
+                <img src="./img-9.png" data-cat="animal" data-search="animal cat mouse cute png" alt="imageGallery">
+                <img src="./img-10.svg" data-cat="fish" data-search="animal fish shark vector" alt="imageGallery">
+                <img src="./img-11.jpg" data-cat="food" data-search="food orange" alt="imageGallery">
+                <img src="./img-12.svg" data-cat="food" data-search="food vector juice drink" alt="imageGallery">
+                <img src="./img-13.png" data-cat="food" data-search="food chicken cartoon png" alt="imageGallery">
+                <img src="./img-14.jpg" data-cat="food" data-search="food coffee bread breakfast" alt="imageGallery">
+                <img src="./img-15.png" data-cat="food" data-search="food burger png cartoon" alt="imageGallery">
+                <img src="./img-16.svg" data-cat="food" data-search="food popcorn vector" alt="imageGallery">
+                <img src="./img-17.jpg" data-cat="food" data-search="food pancake breakfast" alt="imageGallery">
+                <img src="./img-18.svg" data-cat="flower" data-search="flower plants nature vector" alt="imageGallery">
+                <img src="./img-19.png" data-cat="flower" data-search="flower plants nature cartoon" alt="imageGallery">
+                <img src="./img-20.jpg" data-cat="flower" data-search="flower plants nature" alt="imageGallery">
+            </div>
+        </section>
+        <section>
+            <div class="popup">
+                <img src="" alt="popup">
+            </div>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
